@@ -124,7 +124,7 @@ export const DATA = {
       dates: "April 2023 - March 2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+      "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -145,7 +145,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
     {
       title: "Web 3.0 Wallet",
@@ -153,7 +153,7 @@ export const DATA = {
       dates: null,
       active: false,
       description:
-        "Developed a Web3 wallet supporting Solana and Ethereum with HD Wallet functionality.",
+      "Developed a Web3 wallet supporting Solana and Ethereum with HD Wallet functionality.",
       technologies: [
         "ReactJS",
         "Vite",
@@ -168,11 +168,40 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/src/assets/coming-soon.png",
+      image: "/orion.png",
       video: null,
     },
+    {
+      title: "zipp2",
+      href: "https://zipp2.vercel.app/",
+      dates: "",
+      active: true,
+      description:
+        "Allows users to shorten long URLs, track usage analytics, and manage their links effectively.",
+      technologies: [
+        "React.js",
+        "Vite",
+        "Typescript",
+        "TailwindCSS",
+        "PostgreSQL",
+        "NeonDB",
+        "Shadcn UI",
+        "Node.js",
+        "Express.js",
+        "NodeJS",
+        "Redux Toolkit",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://zipp2.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/zipp2.png",
+      video: "",
+    },
   ],
-
   hackathons: [
     {
       title: "Portal Hackathon",

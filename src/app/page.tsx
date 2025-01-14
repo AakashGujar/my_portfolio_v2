@@ -1,8 +1,10 @@
+import { EducationTimeline } from "@/components/education-card";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import { TimelineCard } from "@/components/timeline-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
@@ -87,6 +89,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
@@ -97,33 +100,39 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
+
       <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
-          {DATA.work.map((work, id) => (
-            <BlurFade
-              key={work.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
-                key={work.company}
-                logoUrl={work.logoUrl}
-                altText={work.company}
-                title={work.company}
-                subtitle={work.title}
-                href={work.href}
-                badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
-              />
-            </BlurFade>
-          ))}
+          <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+            {DATA.work.map((work, id) => (
+              <BlurFade key={id} delay={BLUR_FADE_DELAY * 6}>
+                <TimelineCard {...work} />
+              </BlurFade>
+            ))}
+          </ul>
         </div>
       </section>
+
+      {/* <section id="education">
+        <div className="flex min-h-0 flex-col">
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <h2 className="text-xl font-bold">Work Experience</h2>
+          </BlurFade>
+          <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+            {DATA.education.map((work, id) => (
+              <BlurFade key={id} delay={BLUR_FADE_DELAY * 6}>
+                <EducationTimeline {...education} />
+              </BlurFade>
+            ))}
+          </ul>
+        </div>
+      </section> */}
+
       <section id="education">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>

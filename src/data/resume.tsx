@@ -66,7 +66,7 @@ export const DATA = {
       company: "CAITS",
       badges: [],
       href: "#",
-      location: "Remote",
+      location: "Mumbai, IN",
       title: "Freelance Web Developer",
       logoUrl: "/Caits.png",
       start: "May 2023",
@@ -90,7 +90,7 @@ export const DATA = {
       company: "L&T",
       href: "#",
       badges: [],
-      location: "Remote",
+      location: "Mumbai, IN",
       title: "Student Intern",
       logoUrl: "/L&T.png",
       start: "May 2019",
@@ -124,7 +124,7 @@ export const DATA = {
       dates: "April 2023 - March 2024",
       active: true,
       description:
-      "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -145,7 +145,7 @@ export const DATA = {
       ],
       image: "",
       video:
-      "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
     {
       title: "Web 3.0 Wallet",
@@ -153,7 +153,7 @@ export const DATA = {
       dates: null,
       active: false,
       description:
-      "Developed a Web3 wallet supporting Solana and Ethereum with HD Wallet functionality.",
+        "Developed a Web3 wallet supporting Solana and Ethereum with HD Wallet functionality.",
       technologies: [
         "ReactJS",
         "Vite",
@@ -200,6 +200,33 @@ export const DATA = {
       ],
       image: "/zipp2.png",
       video: "",
+    },
+  ],
+  testimonials: [
+    {
+      text: "Aakash is an exceptional developer with a keen eye for detail. His work on our project was outstanding.",
+      name: "John Doe",
+      position: "CTO, Tech Corp",
+      avatar: "/john-doe-avatar.png",
+    },
+    {
+      text: "Working with Aakash was a pleasure. He consistently delivered high-quality code and innovative solutions.",
+      name: "Jane Smith",
+      position: "Lead Developer, Innovate Inc",
+      avatar: "/jane-smith-avatar.png",
+    },
+  ],
+  openSourceContributions: [
+    {
+      project: "React",
+      description:
+        "Implemented a new feature for handling async rendering in React components.",
+      link: "https://github.com/facebook/react/pull/1234",
+    },
+    {
+      project: "Next.js",
+      description: "Fixed a bug in the routing system for dynamic routes.",
+      link: "https://github.com/vercel/next.js/pull/5678",
     },
   ],
   hackathons: [

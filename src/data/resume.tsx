@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/india",
   description: "",
   summary:
-    "I aim to create websites that make a positive impact on people's lives, staying updated with the changing tech landscape, and constantly learning how to build scalable and efficient websites",
+    "I'm currently working as a freelance engineer while actively seeking new opportunities. My current focus is on expanding my knowledge in Web3.",
   avatarUrl: "/me.png",
   skills: {
     frontend: [
@@ -109,7 +109,7 @@ export const DATA = {
       logoUrl: "/ucoe.png",
       start: "2020",
       end: "2023",
-      desc: "Obtained CPGA 8.90"
+      desc: "Obtained CPGA 9.13",
     },
     {
       school: "Bhausaheb Vartak Polytechnic College, Vasai",
@@ -119,7 +119,7 @@ export const DATA = {
       logoUrl: "/bvp.png",
       start: "2017",
       end: "2020",
-      desc: "Obtained Percentage 89.90%"
+      desc: "Obtained Percentage 89.90%",
     },
   ],
   projects: [
@@ -207,31 +207,30 @@ export const DATA = {
       video: "",
     },
   ],
+  contributions: [
+    {
+      title: "Sanity",
+      description:
+        "Contributed to the Sanity, a go-to open-source tool for managing esports platforms.",
+      technologies: [
+        { name: "NextJS", color: "#383c3d" },
+        { name: "TypeScript", color: "#1e7dbc" },
+        { name: "MongoDb", color: "#57AA51" },
+        { name: "Node.js", color: "#339933" },
+      ],
+      tags: ["#UI", "#refactor", "#revamp"],  // Dynamic tags
+      href: "https://github.com/dinxsh/sanity/pull/230",
+    },
+  ],  
   testimonials: [
     {
-      text: "Aakash is an exceptional developer with a keen eye for detail. His work on our project was outstanding.",
-      name: "John Doe",
-      position: "CTO, Tech Corp",
-      avatar: "/john-doe-avatar.png",
-    },
-    {
-      text: "Working with Aakash was a pleasure. He consistently delivered high-quality code and innovative solutions.",
-      name: "Jane Smith",
-      position: "Lead Developer, Innovate Inc",
-      avatar: "/jane-smith-avatar.png",
-    },
-  ],
-  openSourceContributions: [
-    {
-      project: "React",
-      description:
-        "Implemented a new feature for handling async rendering in React components.",
-      link: "https://github.com/facebook/react/pull/1234",
-    },
-    {
-      project: "Next.js",
-      description: "Fixed a bug in the routing system for dynamic routes.",
-      link: "https://github.com/vercel/next.js/pull/5678",
+      name: "George Fernandes",
+      designation: "Administrator",
+      company: "Exports hvac",
+      testimonial:
+        "Aakash delivered an exceptional prototype with remarkable attention to detail. Working with him was a pleasure due to his quick responsiveness and politeness. Highly recommended.",
+      image: "/john-doe.jpg",
+      platform: "LinkedIn", // New platform field
     },
   ],
   hackathons: [

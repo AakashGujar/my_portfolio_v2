@@ -65,7 +65,7 @@ export const DATA = {
   work: [
     {
       company: "CAITS",
-      badges: [],
+      badges: [], 
       href: "#",
       location: "Mumbai, IN",
       title: "Freelance Web Developer",
@@ -77,8 +77,8 @@ export const DATA = {
     },
     {
       company: "Devtown",
-      href: "#",
       badges: [],
+      href: "#",
       location: "Remote",
       title: "Web Developer Intern",
       logoUrl: "/devtown.jpg",

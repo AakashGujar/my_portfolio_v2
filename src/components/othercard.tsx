@@ -1,17 +1,30 @@
 "use client";
 import Link from "next/link";
-import { ExternalLink, Github, GitFork, Quote, Star } from "lucide-react";
+import { ExternalLink, Github, Quote } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+
+interface Technology {
+  name: string;
+  color: string;
+}
+
+interface ContributionCardProps {
+  title: string;
+  description: string;
+  technologies: readonly Technology[];
+  tags?: readonly string[]; 
+  href: string;
+}
 
 export const ContributionCard = ({
   title,
   description,
   technologies,
-  tags, 
+  tags,
   href,
-}) => {
+}: ContributionCardProps) => {
   return (
     <Card className="p-4 h-full flex flex-col hover:shadow-lg transition-all duration-300">
       <div className="flex items-center gap-2 mb-2">
@@ -56,7 +69,25 @@ export const ContributionCard = ({
   );
 };
 
-export const TestimonialCard = ({ testimonial, className }) => {
+// Type definition for TestimonialCard props
+interface Testimonial {
+  name: string;
+  image: string;
+  designation: string;
+  company: string;
+  testimonial: string;
+  platform: string;
+}
+
+interface TestimonialCardProps {
+  testimonial: Testimonial;
+  className?: string; // Optional className
+}
+
+export const TestimonialCard = ({
+  testimonial,
+  className,
+}: TestimonialCardProps) => {
   return (
     <Card className={`p-6 h-full flex flex-col ${className}`}>
       <div className="flex items-start gap-4 mb-4">

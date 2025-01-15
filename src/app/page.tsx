@@ -116,101 +116,42 @@ export default function Page() {
         </div>
       </section>
 
-      {/* <section id="education">
+      <section id="education">
         <div className="flex min-h-0 flex-col">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
           <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-            {DATA.education.map((work, id) => (
+            {DATA.education.map((education, id) => (
               <BlurFade key={id} delay={BLUR_FADE_DELAY * 6}>
                 <EducationTimeline {...education} />
               </BlurFade>
             ))}
           </ul>
         </div>
-      </section> */}
-
-      <section id="education">
-        <div className="flex min-h-0 flex-col">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
-          </BlurFade>
-          {DATA.education.map((education, id) => (
-            <BlurFade
-              key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-            >
-              <ResumeCard
-                key={education.school}
-                href={education.href}
-                logoUrl={education.logoUrl}
-                altText={education.school}
-                title={education.school}
-                subtitle={education.degree}
-                period={`${education.start} - ${education.end}`}
-              />
-            </BlurFade>
-          ))}
-        </div>
       </section>
+
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
 
-          <div className="space-y-4">
-            <BlurFade delay={BLUR_FADE_DELAY * 10}>
-              <div className="space-y-2">
-                <h3 className="text-sm font-medium">Frontend</h3>
-                <div className="flex flex-wrap gap-1">
-                  {DATA.skills.frontend.map((skill, id) => (
-                    <BlurFade
-                      key={skill}
-                      delay={BLUR_FADE_DELAY * 10.1 + id * 0.05}
-                    >
-                      <Badge key={skill}>{skill}</Badge>
-                    </BlurFade>
-                  ))}
-                </div>
-              </div>
-            </BlurFade>
-
-            <BlurFade delay={BLUR_FADE_DELAY * 11}>
-              <div className="space-y-2">
-                <h3 className="text-sm font-medium">Backend</h3>
-                <div className="flex flex-wrap gap-1">
-                  {DATA.skills.backend.map((skill, id) => (
-                    <BlurFade
-                      key={skill}
-                      delay={BLUR_FADE_DELAY * 11.1 + id * 0.05}
-                    >
-                      <Badge key={skill}>{skill}</Badge>
-                    </BlurFade>
-                  ))}
-                </div>
-              </div>
-            </BlurFade>
-
-            <BlurFade delay={BLUR_FADE_DELAY * 12}>
-              <div className="space-y-2">
-                <h3 className="text-sm font-medium">Tools</h3>
-                <div className="flex flex-wrap gap-1">
-                  {DATA.skills.tools.map((skill, id) => (
-                    <BlurFade
-                      key={skill}
-                      delay={BLUR_FADE_DELAY * 12.1 + id * 0.05}
-                    >
-                      <Badge key={skill}>{skill}</Badge>
-                    </BlurFade>
-                  ))}
-                </div>
-              </div>
-            </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {[
+              ...DATA.skills.frontend,
+              ...DATA.skills.backend,
+              ...DATA.skills.DevOps,
+              ...DATA.skills.tools,
+            ].map((skill, id) => (
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge>{skill}</Badge>
+              </BlurFade>
+            ))}
           </div>
         </div>
       </section>
+
       <section id="projects">
         <div className="flex min-h-0 flex-col">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -240,6 +181,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+    
       {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>

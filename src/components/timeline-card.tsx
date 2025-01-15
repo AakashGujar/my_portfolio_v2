@@ -40,7 +40,7 @@ export const TimelineCard: React.FC<TimelineCardProps> = ({
         </Avatar>
       </div>
       <div className="flex flex-1 flex-col justify-start gap-1">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify- -start">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between items-center">
           <div className="flex flex-col">
             <p className="text-xs text-muted-foreground">{location}</p>
             <h2 className="font-semibold leading-none">{title}</h2>

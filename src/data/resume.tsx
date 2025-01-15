@@ -23,6 +23,7 @@ export const DATA = {
       "CSS3",
     ],
     backend: ["Node.js", "Express.js", "MongoDB"],
+    DevOps: ["AWS", "Docker", "CI/CD"],
     tools: ["Git", "GitHub", "Jest", "Postman", "Figma", "RESTful APIs"],
   },
   navbar: [
@@ -103,18 +104,22 @@ export const DATA = {
     {
       school: "Universal College of Engineering, Kaman",
       href: "https://universalcollegeofengineering.edu.in/",
-      degree: "Bachelor of Engineering in Information Technology",
+      degree: "Bachelor of Engineering",
+      field: "Information Technology",
       logoUrl: "/ucoe.png",
       start: "2020",
       end: "2023",
+      desc: "Obtained CPGA 8.90"
     },
     {
       school: "Bhausaheb Vartak Polytechnic College, Vasai",
       href: "https://ibo.org",
-      degree: "Diploma in Computer Engineering",
+      degree: "Diploma",
+      field: "Computer Engineering",
       logoUrl: "/bvp.png",
       start: "2017",
       end: "2020",
+      desc: "Obtained Percentage 89.90%"
     },
   ],
   projects: [

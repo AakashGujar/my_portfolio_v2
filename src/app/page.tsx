@@ -39,15 +39,17 @@ export default function Page() {
                 yOffset={8}
                 text={`${DATA.name}`}
               />
-              <div className="flex items-center gap-2">
-                <Badge
-                  variant="secondary"
-                  className="h-5 flex items-center justify-center gap-1.5 px-2 text-sm"
-                >
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                  <p className="text-green-500 ">open to work</p>
-                </Badge>
-              </div>
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <div className="flex items-center gap-2">
+                  <Badge
+                    variant="secondary"
+                    className="h-5 flex items-center justify-center gap-1.5 px-2 text-sm"
+                  >
+                    <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                    <p className="text-green-500 ">open to work</p>
+                  </Badge>
+                </div>
+              </BlurFade>
 
               <BlurFadeText
                 className="max-w-[600px] text-sm md:text-lg"
@@ -56,7 +58,7 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-20 border">
+              <Avatar className="size-20 border rounded-3xl">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
@@ -72,12 +74,11 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <div className="space-y-4 prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             <p>
-              I’m currently working as a freelance web developer and exploring
+              I’m currently working as a freelance engineer and exploring
               new opportunities for a full-time role. I’m actively diving into
               Web3 to expand my skill set. You can find me often active on{" "}
               <Link
-                href="https://discord.com/users/yourdiscordid"
-                target="_blank"
+                href="#"
                 className="text-white hover:underline"
               >
                 Discord
@@ -101,13 +102,13 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
-          <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-            {DATA.work.map((work, id) => (
-              <BlurFade key={id} delay={BLUR_FADE_DELAY * 6}>
-                <TimelineCard {...work} />
-              </BlurFade>
-            ))}
-          </ul>
+          <BlurFade delay={BLUR_FADE_DELAY * 6}>
+            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+              {DATA.work.map((work, id) => (
+                <TimelineCard {...work} key={id} />
+              ))}
+            </ul>
+          </BlurFade>
         </div>
       </section>
 
@@ -116,13 +117,13 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
-          <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-            {DATA.education.map((education, id) => (
-              <BlurFade key={id} delay={BLUR_FADE_DELAY * 6}>
-                <EducationTimeline {...education} />
-              </BlurFade>
-            ))}
-          </ul>
+          <BlurFade delay={BLUR_FADE_DELAY * 6}>
+            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+              {DATA.education.map((education, id) => (
+                <EducationTimeline {...education} key={id} />
+              ))}
+            </ul>
+          </BlurFade>
         </div>
       </section>
 

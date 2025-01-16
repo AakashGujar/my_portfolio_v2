@@ -10,7 +10,7 @@ export const DATA = {
   description: "",
   summary:
     "I'm currently working as a freelance engineer while actively seeking new opportunities. My current focus is on expanding my knowledge in Web3.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/meXD.jpg",
   skills: {
     frontend: [
       "NextJS",
@@ -68,7 +68,7 @@ export const DATA = {
       badges: [], 
       href: "#",
       location: "Mumbai, IN",
-      title: "Freelance Web Developer",
+      title: "Freelance Engineer",
       logoUrl: "/Caits.png",
       start: "May 2023",
       end: "October 2024",

@@ -83,7 +83,7 @@ export default function Page() {
               <Link href="#" className="text-white hover:underline">
                 Discord
               </Link>
-              . I also manage a thriving community of over 1,000 members called{" "}
+              . I also manage a thriving community of over 1,000+ members called{" "}
               <Link href="#" className="text-white hover:underline">
                 43labs
               </Link>

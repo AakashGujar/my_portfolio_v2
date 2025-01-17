@@ -12,6 +12,7 @@ import Link from "next/link";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { PublicationCard } from "@/components/publication-card";
 
 const BLUR_FADE_DELAY = 0.05;
 
@@ -74,13 +75,10 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <div className="space-y-4 prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             <p>
-              I’m currently working as a freelance engineer and exploring
-              new opportunities for a full-time role. I’m actively diving into
-              Web3 to expand my skill set. You can find me often active on{" "}
-              <Link
-                href="#"
-                className="text-white hover:underline"
-              >
+              I’m currently working as a freelance engineer and exploring new
+              opportunities for a full-time role. I’m actively diving into Web3
+              to expand my skill set. You can find me often active on{" "}
+              <Link href="#" className="text-white hover:underline">
                 Discord
               </Link>
               . Feel free to check out my{" "}
@@ -200,6 +198,26 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY * 14 + id * 0.05}
               >
                 <ContributionCard {...contribution} />
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="publications">
+        <div className="flex min-h-0 flex-col">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-xl font-bold">Publications</h2>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-4 max-w-[800px] mx-auto">
+            {DATA.publications.map((publication, id) => (
+              <BlurFade
+                key={publication.title}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
+              >
+                <PublicationCard {...publication} />
               </BlurFade>
             ))}
           </div>

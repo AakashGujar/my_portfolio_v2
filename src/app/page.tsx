@@ -60,8 +60,8 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-20 border rounded-3xl">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
+                <AvatarImage alt={DATA.name} src={DATA.avataUrl} />
+                <AvatarFallback className="rounded-3xl">{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
@@ -69,7 +69,7 @@ export default function Page() {
       </section>
 
       <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
+        <BlurFade delay={BLUR_FADE_DELAY * 3}>  
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>

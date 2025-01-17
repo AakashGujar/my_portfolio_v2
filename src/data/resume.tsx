@@ -65,7 +65,7 @@ export const DATA = {
   work: [
     {
       company: "CAITS",
-      badges: [], 
+      badges: [],
       href: "#",
       location: "Mumbai, IN",
       title: "Freelance Engineer",
@@ -218,10 +218,10 @@ export const DATA = {
         { name: "MongoDb", color: "#57AA51" },
         { name: "Node.js", color: "#339933" },
       ],
-      tags: ["#UI", "#refactor", "#revamp"],  // Dynamic tags
+      tags: ["#UI", "#refactor", "#revamp"], // Dynamic tags
       href: "https://github.com/dinxsh/sanity/pull/230",
     },
-  ],  
+  ],
   testimonials: [
     {
       name: "George Fernandes",
@@ -249,6 +249,16 @@ export const DATA = {
           href: "https://github.com/UWPortalSDK/crowmark",
         },
       ],
+    },
+  ],
+  publications: [
+    {
+      title: "Web-3 Music Player on Blockchain",
+      dates: "April 2023",
+      description:
+        "A web3-based music platform that utilizes NFTs to empower artists, shedding light on the future of the music industry.",
+      publication: "IEEE",
+      link: "https://www.researchgate.net/publication/370178652_Web-3_Music_Player_on_Blockchain",
     },
   ],
 } as const;

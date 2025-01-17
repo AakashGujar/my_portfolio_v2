@@ -61,7 +61,9 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-20 border rounded-3xl">
                 <AvatarImage alt={DATA.name} src={DATA.avataUrl} />
-                <AvatarFallback className="rounded-3xl">{DATA.initials}</AvatarFallback>
+                <AvatarFallback className="rounded-3xl">
+                  {DATA.initials}
+                </AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
@@ -69,7 +71,7 @@ export default function Page() {
       </section>
 
       <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>  
+        <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
@@ -80,6 +82,10 @@ export default function Page() {
               to expand my skill set. You can find me often active on{" "}
               <Link href="#" className="text-white hover:underline">
                 Discord
+              </Link>
+              . I also manage a thriving community of over 1,000 members called{" "}
+              <Link href="#" className="text-white hover:underline">
+                43labs
               </Link>
               . Feel free to check out my{" "}
               <Link

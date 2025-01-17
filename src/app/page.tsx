@@ -87,7 +87,7 @@ export default function Page() {
               <Link href="#" className="text-white hover:underline">
                 43labs
               </Link>
-              . Feel free to check out my{" "}
+              . Feel free to check out my
               <Link
                 href="https://drive.google.com/file/d/1NSE6XRGxtO-sxMjwDSG_9qTAXqlytI-l/view?usp=sharing"
                 target="_blank"

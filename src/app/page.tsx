@@ -84,7 +84,10 @@ export default function Page() {
                 Discord
               </Link>
               . I also manage a thriving community of over 1,000+ members called{" "}
-              <Link href="#" className="text-white hover:underline">
+              <Link
+                href=" https://43labs.xyz/"
+                className="text-white hover:underline"
+              >
                 43labs
               </Link>
               . Feel free to check out my

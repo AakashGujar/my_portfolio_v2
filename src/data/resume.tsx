@@ -176,7 +176,7 @@ export const DATA = {
         {
           type: "Code",
           href: "https://github.com/AakashGujar/web3wallet",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/orion.png",
@@ -208,6 +208,11 @@ export const DATA = {
           href: "https://zipp2.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Code",
+          href: "https://github.com/AakashGujar/zipp2",
+          icon: <Icons.github className="size-3" />,
+        }
       ],
       image: "/zipp2.png",
       video: "",

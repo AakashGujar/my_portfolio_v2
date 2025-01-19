@@ -124,37 +124,38 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Disposable Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "terminate-d-chat",
+      href: "https://trmnt-d-cht.vercel.app",
+      dates: null,
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "A real-time chat server where users can send anonymous messages, and each room has a timer that auto-destructs after a set time.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "JavaScript",
+        "Socket.io",
         "TailwindCSS",
         "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
       ],
       links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://trmnt-d-cht.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Code",
+          href: "https://github.com/AakashGujar/chatapp",
+          icon: <Icons.github className="size-3" />,
+        }
       ],
-      image: "",
+      image: "/trmnt-d-cht.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
     {
       title: "Web 3.0 Wallet",
-      href: "https://www.google.com",
+      href: "https://orion-wallet.netlify.app/",
       dates: null,
       active: false,
       description:
@@ -169,7 +170,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://www.google.com",
+          href: "https://orion-wallet.netlify.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Code",
+          href: "https://github.com/AakashGujar/web3wallet",
           icon: <Icons.globe className="size-3" />,
         },
       ],

@@ -1,6 +1,15 @@
+import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+
+interface PublicationProps {
+  title: string;
+  dates: string;
+  description: string;
+  publication: string;
+  link: string;
+}
 
 export const PublicationCard = ({
   title,
@@ -8,13 +17,7 @@ export const PublicationCard = ({
   description,
   publication,
   link,
-}: {
-  title: string;
-  dates: string;
-  description: string;
-  publication: string;
-  link: string;
-}) => {
+}: PublicationProps): JSX.Element => {
   return (
     <div className="group relative rounded-lg border p-4 hover:bg-muted/50 transition-colors">
       <div className="flex items-start justify-between">
@@ -25,6 +28,7 @@ export const PublicationCard = ({
               <Link
                 href={link}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
               >
                 <ArrowUpRight className="size-3" />
@@ -43,3 +47,5 @@ export const PublicationCard = ({
     </div>
   );
 };
+
+export default PublicationCard;

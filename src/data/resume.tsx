@@ -147,11 +147,10 @@ export const DATA = {
           type: "Code",
           href: "https://github.com/AakashGujar/chatapp",
           icon: <Icons.github className="size-3" />,
-        }
+        },
       ],
       image: "/trmnt-d-cht.png",
-      video:
-        "",
+      video: "",
     },
     {
       title: "Web 3.0 Wallet",
@@ -212,7 +211,7 @@ export const DATA = {
           type: "Code",
           href: "https://github.com/AakashGujar/zipp2",
           icon: <Icons.github className="size-3" />,
-        }
+        },
       ],
       image: "/zipp2.png",
       video: "",
@@ -229,8 +228,21 @@ export const DATA = {
         { name: "MongoDb", color: "#57AA51" },
         { name: "Node.js", color: "#339933" },
       ],
-      tags: ["#UI", "#refactor", "#revamp"], // Dynamic tags
+      tags: ["#UI", "#refactor", "#revamp"],
       href: "https://github.com/dinxsh/sanity/pull/230",
+    },
+    {
+      title: "Codu",
+      description:
+        "Contributed to the Codu, open-source codebase. A space for coders",
+      technologies: [
+        { name: "NextJS", color: "#383c3d" },
+        { name: "TypeScript", color: "#1e7dbc" },
+        { name: "Prisma", color: "#ffffff" },
+        { name: "Node.js", color: "#339933" },
+      ],
+      tags: ["#UI", "#Fix"],
+      href: "https://github.com/codu-code/codu/pull/1236#issuecomment-2599593395",
     },
   ],
   testimonials: [

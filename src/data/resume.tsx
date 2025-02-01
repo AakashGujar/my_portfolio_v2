@@ -64,6 +64,18 @@ export const DATA = {
   },
   work: [
     {
+      company: "Sequretek",
+      badges: [],
+      href: "#",
+      location: "Mumbai, IN",
+      title: "DevOps Engineer",
+      logoUrl: "/sequretek.png",
+      start: "Jan 2025",
+      end: "Present",
+      description:
+        "Recently joined as a DevOps Engineer, I am actively learning and expanding my skill set, with a keen interest in exploring the cybersecurity aspects of Sequretek.",
+    },
+    {
       company: "CAITS",
       badges: [],
       href: "#",

@@ -10,7 +10,7 @@ export const DATA = {
   description: "",
   summary:
     "I'm currently working as a freelance engineer while actively seeking new opportunities. My current focus is on expanding my knowledge in Web3.",
-  avatarUrl: "/meXD.jpg",
+  avatarUrl: "",
   skills: {
     frontend: [
       "NextJS",

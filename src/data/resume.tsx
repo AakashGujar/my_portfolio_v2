@@ -67,7 +67,7 @@ export const DATA = {
       badges: [],
       href: "#",
       location: "Mumbai, IN",
-      title: "DevOps Engineer",
+      title: "Software Engineer",
       logoUrl: "/sequretek.png",
       start: "Jan 2025",
       end: "Present",
@@ -233,19 +233,6 @@ export const DATA = {
   ],
   contributions: [
     {
-      title: "Sanity",
-      description:
-        "Contributed to the Sanity, a go-to open-source tool for managing esports platforms.",
-      technologies: [
-        { name: "NextJS", color: "#383c3d" },
-        { name: "TypeScript", color: "#1e7dbc" },
-        { name: "MongoDb", color: "#57AA51" },
-        { name: "Node.js", color: "#339933" },
-      ],
-      tags: ["#UI", "#refactor", "#revamp"],
-      href: "https://github.com/dinxsh/sanity/pull/230",
-    },
-    {
       title: "Codu",
       description:
         "Contributed to the Codu, open-source codebase. A space for coders",
@@ -258,6 +245,19 @@ export const DATA = {
       tags: ["#UI", "#Fix"],
       href: "https://github.com/codu-code/codu/pull/1236#issuecomment-2599593395",
     },
+     {
+      title: "Sanity",
+      description:
+        "Contributed to the Sanity, a go-to open-source tool for managing esports platforms.",
+      technologies: [
+        { name: "NextJS", color: "#383c3d" },
+        { name: "TypeScript", color: "#1e7dbc" },
+        { name: "MongoDb", color: "#57AA51" },
+        { name: "Node.js", color: "#339933" },
+      ],
+      tags: ["#UI", "#refactor", "#revamp"],
+      href: "https://github.com/dinxsh/sanity/pull/230",
+    }
   ],
   testimonials: [
     {

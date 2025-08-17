@@ -77,8 +77,7 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <div className="space-y-4 prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             <p>
-              I’m currently working as a DevOps engineer at Sequretek while also
-              freelancing as an engineer. I’m actively diving into Web3 to
+              I’m currently working as a Software engineer (DevOps-heavy role) at Sequretek. I’m actively diving into Web3 to
               expand my skill set. You can often find me active on{" "}
               <Link href="#" className="text-white hover:underline">
                 Discord

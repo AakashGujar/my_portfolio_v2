@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/india",
   description: "",
   summary:
-    "I'm currently working as a freelance engineer while actively seeking new opportunities. My current focus is on expanding my knowledge in Web3.",
+    "",
   avatarUrl: "",
   skills: {
     frontend: [
@@ -23,8 +23,8 @@ export const DATA = {
       "CSS3",
     ],
     backend: ["Node.js", "Express.js", "MongoDB"],
-    DevOps: ["AWS", "Docker", "CI/CD"],
-    tools: ["Git", "GitHub", "Jest", "Postman", "Figma", "RESTful APIs"],
+    DevOps: ["AWS", "Docker", "Jenkins", "NGINX","Kafka","Ansible"],
+    tools: ["GitHub", "GitLab", "Jest", "Postman", "Figma", "RESTful APIs"],
   },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -73,7 +73,7 @@ export const DATA = {
       start: "Jan 2025",
       end: "Present",
       description:
-        "Recently joined as a DevOps Engineer, I am actively learning and expanding my skill set, with a keen interest in exploring the cybersecurity aspects of Sequretek.",
+        "Recently joined as a Software Engineer (DevOps-heavy role), I am actively learning and expanding my skill set, with a keen interest in exploring the cybersecurity aspects of Sequretek.",
     },
     {
       company: "CAITS",
@@ -87,18 +87,18 @@ export const DATA = {
       description:
         "Built UI/UX designs, including wireframes, prototypes, and API integrations. Enhanced server performance and streamlined data systems for improved efficiency.",
     },
-    {
-      company: "Devtown",
-      badges: [],
-      href: "#",
-      location: "Remote",
-      title: "Web Developer Intern",
-      logoUrl: "/devtown.jpg",
-      start: "June 2022",
-      end: "October 2022",
-      description:
-        "Engineered a secure authentication module, improving system security. Revamped UI/UX design, enhancing user satisfaction.",
-    },
+    // {
+    //   company: "Devtown",
+    //   badges: [],
+    //   href: "#",
+    //   location: "Remote",
+    //   title: "Web Developer Intern",
+    //   logoUrl: "/devtown.jpg",
+    //   start: "June 2022",
+    //   end: "October 2022",
+    //   description:
+    //     "Engineered a secure authentication module, improving system security. Revamped UI/UX design, enhancing user satisfaction.",
+    // },
     {
       company: "L&T",
       href: "#",

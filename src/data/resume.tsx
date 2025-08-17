@@ -8,8 +8,7 @@ export const DATA = {
   location: "Mumbai, In",
   locationLink: "https://www.google.com/maps/place/india",
   description: "",
-  summary:
-    "",
+  summary: "",
   avatarUrl: "",
   skills: {
     frontend: [
@@ -23,7 +22,7 @@ export const DATA = {
       "CSS3",
     ],
     backend: ["Node.js", "Express.js", "MongoDB"],
-    DevOps: ["AWS", "Docker", "Jenkins", "NGINX","Kafka","Ansible"],
+    DevOps: ["AWS", "Docker", "Jenkins", "NGINX", "Kafka", "Ansible"],
     tools: ["GitHub", "GitLab", "Jest", "Postman", "Figma", "RESTful APIs"],
   },
   navbar: [
@@ -163,6 +162,7 @@ export const DATA = {
       ],
       image: "/trmnt-d-cht.png",
       video: "",
+      unstable: true,
     },
     {
       title: "Web 3.0 Wallet",
@@ -192,6 +192,7 @@ export const DATA = {
       ],
       image: "/orion.png",
       video: null,
+      unstable: false,
     },
     {
       title: "zipp2",
@@ -227,6 +228,7 @@ export const DATA = {
       ],
       image: "/zipp2.png",
       video: "",
+      unstable: true,
     },
   ],
   contributions: [

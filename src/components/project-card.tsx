@@ -1,3 +1,4 @@
+import type React from "react";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -10,6 +11,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { AlertTriangle } from "lucide-react";
 
 interface Props {
   title: string;
@@ -26,6 +28,7 @@ interface Props {
     href: string;
   }[];
   className?: string;
+  unstable?: boolean;
 }
 
 export function ProjectCard({
@@ -39,13 +42,23 @@ export function ProjectCard({
   video,
   links,
   className,
+  unstable
 }: Props) {
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full relative"
       }
     >
+      {unstable && (
+        <div className="absolute top-2 right-2 z-10">
+          <div className="bg-amber-500 text-amber-900 px-2 py-1 rounded-md text-xs font-medium flex items-center gap-1 shadow-sm">
+            <AlertTriangle className="size-3" />
+            <span>Might be unstable due to Render's free tier</span>
+          </div>
+        </div>
+      )}
+
       <Link
         href={href || "#"}
         className={cn("block cursor-pointer", className)}
@@ -57,12 +70,12 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
           />
         )}
         {image && (
           <Image
-            src={image}
+            src={image || "/placeholder.svg"}
             alt={title}
             width={500}
             height={300}

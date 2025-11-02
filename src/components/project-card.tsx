@@ -54,7 +54,7 @@ export function ProjectCard({
         <div className="absolute top-2 right-2 z-10">
           <div className="bg-amber-500 text-amber-900 px-2 py-1 rounded-md text-xs font-medium flex items-center gap-1 shadow-sm">
             <AlertTriangle className="size-3" />
-            <span>Might be unstable due to Render's free tier</span>
+            <span>Unstable due to Render's free-tier limit</span>
           </div>
         </div>
       )}
